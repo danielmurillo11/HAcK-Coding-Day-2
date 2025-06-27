@@ -1,8 +1,11 @@
-def mean(input):
-  sum = 0
-  for entry in input:
-    sum += entry
-  return sum / len(input)
+def median(input):
+  ind=len(input)
 
-my_list = [0, 1, 2, 3, 4, 5]
-print(mean(my_list))
+  if ind % 2==0:
+     index1=ind//2
+     med=(input[index1]+input[(index1-1)])/2
+     return med
+  else:
+    index1=ind//2
+    med=input[index1]
+    return med
